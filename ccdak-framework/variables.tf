@@ -9,8 +9,3 @@ variable "confluent_cloud_api_secret" {
   type        = string
   sensitive   = true
 }
-
-variable "environment_id" {
-  description = "Confluent Cloud Environment ID"
-  type        = string
-}
