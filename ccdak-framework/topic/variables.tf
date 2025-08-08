@@ -1,13 +1,10 @@
-variable "confluent_cloud_api_key" {
-  description = "Confluent Cloud API Key"
+variable "kafka_cluster_id" {
+  description = "The ID of the Kafka cluster where the topic will be created"
   type        = string
-  sensitive   = true
 }
-
-variable "confluent_cloud_api_secret" {
-  description = "Confluent Cloud API Secret"
+variable "topic_name" {
+  description = "The name of the Kafka topic"
   type        = string
-  sensitive   = true
 }
 
 variable "kafka_api_key" {
@@ -22,3 +19,7 @@ variable "kafka_api_secret" {
   sensitive   = true
 }
 
+variable "kafka_rest_endpoint" {
+  description = "The REST endpoint of the Kafka cluster"
+  type        = string
+}

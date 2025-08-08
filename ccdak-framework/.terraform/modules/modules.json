@@ -1,1 +1,1 @@
-{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"env","Source":"./env","Dir":"env"},{"Key":"kafka_cluster","Source":"./kafka_cluster","Dir":"kafka_cluster"}]}
+{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"env","Source":"./env","Dir":"env"},{"Key":"kafka_cluster","Source":"./kafka_cluster","Dir":"kafka_cluster"},{"Key":"topic","Source":"./topic","Dir":"topic"}]}
