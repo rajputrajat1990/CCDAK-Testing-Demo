@@ -23,3 +23,18 @@ module "topic" {
   kafka_api_key    = var.kafka_api_key
   kafka_api_secret = var.kafka_api_secret
 }
+
+module "datagen_source_connector" {
+  source              = "./datagen_source_connector"
+  connector_name      = "datagen-source-users"
+  environment_id      = module.env.environment_id
+  kafka_cluster_id    = module.kafka_cluster.kafka_cluster_id
+  schema_registry_url = module.env.schema_registry_url
+  kafka_topic         = module.topic.topic_name
+  quickstart_name     = "ORDERS"
+  
+  # Add these new inputs
+  kafka_rest_endpoint = module.kafka_cluster.rest_endpoint
+  kafka_api_key       = var.kafka_api_key
+  kafka_api_secret    = var.kafka_api_secret
+}

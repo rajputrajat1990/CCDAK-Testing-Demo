@@ -15,3 +15,9 @@ provider "confluent" {
 resource "confluent_environment" "this" {
   display_name = var.environment_name
 }
+
+data "confluent_schema_registry_cluster" "this" {
+  environment {
+    id = confluent_environment.this.id
+  }
+}
