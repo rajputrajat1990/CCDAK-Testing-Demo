@@ -22,3 +22,16 @@ variable "kafka_api_secret" {
   sensitive   = true
 }
 
+variable "schema_registry_api_key" {
+  description = "API key for the Schema Registry."
+  type        = string
+  sensitive   = true
+}
+
+variable "schema_registry_api_secret" {
+  description = "API secret for the Schema Registry."
+  type        = string
+  sensitive   = true
+}
+
+

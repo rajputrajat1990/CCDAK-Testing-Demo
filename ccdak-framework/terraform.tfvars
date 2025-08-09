@@ -3,3 +3,6 @@ confluent_cloud_api_secret = "cfltpEVYidpd/qgpUGIlH5ry+DTAOiQhi2A0YT8tJ/v+EQAGoz
 
 kafka_api_key    = "ZJD7IDK5PAFHYS72"
 kafka_api_secret = "cfltKr03goNrDAfawcOUINusdhsg8TPlw5p5WJdO/V6EmPLtXjXZnMaXCs4ghGnQ"
+
+schema_registry_api_key    = "3FCCXSZQ6QS3SM6C"
+schema_registry_api_secret = "cfltQgWgKpH9IRJxM6um1wps4i03OrHhG4knOXSwypAJezfEddeizv8ZHLXpAucQ"

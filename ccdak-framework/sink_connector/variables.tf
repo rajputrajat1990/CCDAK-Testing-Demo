@@ -36,3 +36,8 @@ variable "connection_url" {
   description = "The name of the Kafka topic"
   type        = string
 }
+
+variable "docker_network_name" {
+  description = "The name of the Docker network to attach to."
+  type        = string
+}

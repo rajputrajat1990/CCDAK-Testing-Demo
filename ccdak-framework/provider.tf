@@ -4,6 +4,10 @@ terraform {
       source  = "confluentinc/confluent"
       version = "~> 2.36.0"
     }
+        docker = {
+      source  = "kreuzwerker/docker"
+      version = "3.6.2"
+    }
   }
 }
 
