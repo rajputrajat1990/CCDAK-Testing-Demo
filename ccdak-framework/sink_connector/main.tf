@@ -18,7 +18,7 @@ resource "docker_image" "elasticsearch" {
 }
 resource "docker_container" "elasticsearch" {
   name  = "elasticsearch"
-  image = docker_image.elasticsearch.latest
+  image = docker_image.elasticsearch.image_id
   networks_advanced {
     name = docker_network.kafka_net.name
   }
