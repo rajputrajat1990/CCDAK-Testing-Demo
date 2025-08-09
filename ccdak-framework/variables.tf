@@ -35,3 +35,8 @@ variable "schema_registry_api_secret" {
 }
 
 
+variable "cluster_name" {
+  description = "name for the cluster."
+  type        = string
+  default   = "test-cluster"
+}
