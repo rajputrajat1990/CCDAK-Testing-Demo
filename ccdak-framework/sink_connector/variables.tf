@@ -2,7 +2,15 @@ variable "kafka_cluster_id" {
   description = "The ID of the Kafka cluster where the topic will be created"
   type        = string
 }
+variable "environment_id" {
+  description = "Environment ID in Confluent Cloud"
+  type        = string
+}
 variable "topic_name" {
+  description = "The name of the Kafka topic"
+  type        = string
+}
+variable "connection_password" {
   description = "The name of the Kafka topic"
   type        = string
 }
@@ -21,5 +29,10 @@ variable "kafka_api_secret" {
 
 variable "kafka_rest_endpoint" {
   description = "The REST endpoint of the Kafka cluster"
+  type        = string
+}
+
+variable "connection_url" {
+  description = "The name of the Kafka topic"
   type        = string
 }
