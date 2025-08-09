@@ -41,4 +41,9 @@ module "datagen_source_connector" {
 
 module "sink_connector" {
   source = "./sink_connector"
+  kafka_cluster_id = module.kafka_cluster.kafka_cluster_id
+  topic_name       = module.topic.topic_name
+  kafka_rest_endpoint  = module.kafka_cluster.rest_endpoint
+  kafka_api_key    = var.kafka_api_key
+  kafka_api_secret = var.kafka_api_secret
 }

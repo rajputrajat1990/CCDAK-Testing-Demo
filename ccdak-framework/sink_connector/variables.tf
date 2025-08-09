@@ -1,5 +1,9 @@
-variable "kafka_cluster_bootstrap_endpoint" {
-  description = "confluent cloud kafka bootstrap servers"
+variable "kafka_cluster_id" {
+  description = "The ID of the Kafka cluster where the topic will be created"
+  type        = string
+}
+variable "topic_name" {
+  description = "The name of the Kafka topic"
   type        = string
 }
 
@@ -13,4 +17,9 @@ variable "kafka_api_secret" {
   description = "Existing Confluent Kafka API key secret"
   type        = string
   sensitive   = true
+}
+
+variable "kafka_rest_endpoint" {
+  description = "The REST endpoint of the Kafka cluster"
+  type        = string
 }
